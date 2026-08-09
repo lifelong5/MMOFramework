@@ -145,4 +145,10 @@ public class PoolManager : Singleton<PoolManager>
     {
         poolDic[name].push(obj);
     }
+
+    public void clear()
+    {
+        poolDic.Clear();
+        root = null;
+    }
 }
