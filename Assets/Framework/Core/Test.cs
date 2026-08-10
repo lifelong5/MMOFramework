@@ -7,7 +7,17 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ResourcesManager.Instance.loadAsync<GameObject>("Pool/Cube",(obj) =>
+        {
+            Debug.Log("加载第一次");
+            GameObject.Instantiate(obj);
+        });
+        ResourcesManager.Instance.loadAsync<GameObject>("Pool/Cube", (obj) =>
+        {
+            Debug.Log("加载第二次");
+            GameObject.Instantiate(obj);
+        });
+        GameObject.Instantiate(ResourcesManager.Instance.load<GameObject>("Pool/Cube"));
     }
 
     // Update is called once per frame
