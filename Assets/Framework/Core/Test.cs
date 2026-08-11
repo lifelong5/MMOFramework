@@ -7,19 +7,20 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ResourcesManager.Instance.loadAsync<GameObject>("Pool/Cube",(obj) =>
-        {
-            Debug.Log("加载第一次");
-            GameObject.Instantiate(obj);
-        });
-        ResourcesManager.Instance.loadAsync<GameObject>("Pool/Cube", (obj) =>
-        {
-            Debug.Log("加载第二次");
-            GameObject.Instantiate(obj);
-        });
-        GameObject.Instantiate(ResourcesManager.Instance.load<GameObject>("Pool/Cube"));
+        ResourcesManager.Instance.LoadAsync<GameObject>("Pool/Cube", resLoad);
+        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        ResourcesManager.Instance.Load<GameObject>("Pool/Cube");
+        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
+        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
+        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
     }
 
+    public void resLoad(GameObject obj)
+    {
+        Instantiate(obj);
+    }
     // Update is called once per frame
     void Update()
     {

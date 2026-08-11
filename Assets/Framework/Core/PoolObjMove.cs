@@ -7,7 +7,7 @@ public class PoolObjMove : MonoBehaviour
     public string poolName;
     private void OnEnable()
     {
-        StartCoroutine(destory());
+        //StartCoroutine(destory());
     }
 
     IEnumerator destory()
