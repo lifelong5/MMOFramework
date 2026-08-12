@@ -69,6 +69,7 @@
     <Compile Include="Assets\Framework\Core\Test.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ResourcesManager.cs" />
     <Compile Include="Assets\Framework\Core\Monster.cs" />
+    <Compile Include="Assets\Framework\Core\Resource\EditorResManager.cs" />
     <Compile Include="Assets\Framework\Core\Player.cs" />
     <Compile Include="Assets\Framework\Core\Event\EventManager.cs" />
     <Compile Include="Assets\Framework\Core\Singleton\MonoSingleton.cs" />

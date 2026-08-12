@@ -391,6 +391,7 @@
 "Assets/Framework/Core/Pool/PoolManager.cs"
 "Assets/Framework/Core/Pool/PoolObj.cs"
 "Assets/Framework/Core/PoolObjMove.cs"
+"Assets/Framework/Core/Resource/EditorResManager.cs"
 "Assets/Framework/Core/Resource/ResourcesManager.cs"
 "Assets/Framework/Core/Singleton/MonoSingleton.cs"
 "Assets/Framework/Core/Singleton/Singleton.cs"

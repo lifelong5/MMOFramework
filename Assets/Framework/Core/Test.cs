@@ -7,14 +7,16 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ResourcesManager.Instance.LoadAsync<GameObject>("Pool/Cube", resLoad);
-        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
-        ResourcesManager.Instance.Load<GameObject>("Pool/Cube");
-        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
-        ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
-        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
-        ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
-        Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        //ResourcesManager.Instance.LoadAsync<GameObject>("Pool/Cube", resLoad);
+        //Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        //ResourcesManager.Instance.Load<GameObject>("Pool/Cube");
+        //Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        //ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
+        //Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+        //ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
+        //Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
+
+        Instantiate(EditorResManager.Instance.LoadEditorRes<GameObject>("Cube.prefab"));
     }
 
     public void resLoad(GameObject obj)
