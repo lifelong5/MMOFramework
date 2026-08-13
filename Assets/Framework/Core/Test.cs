@@ -16,7 +16,7 @@ public class NewBehaviourScript : MonoBehaviour
         //ResourcesManager.Instance.Release<GameObject>("Pool/Cube");
         //Debug.Log(ResourcesManager.Instance.GetResourcesRefCount<GameObject>("Pool/Cube"));
 
-        Instantiate(EditorResManager.Instance.LoadEditorRes<GameObject>("Cube.prefab"));
+        //Instantiate(EditorResManager.Instance.LoadEditorRes<GameObject>("Cube.prefab"));
     }
 
     public void resLoad(GameObject obj)
