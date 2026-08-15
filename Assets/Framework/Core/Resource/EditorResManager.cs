@@ -9,7 +9,7 @@ using UnityEngine;
 public class EditorResManager : Singleton<EditorResManager>
 {
     private EditorResManager() { }
-    private string root = "Assets/Editor/ArtRes/";//路径
+    private string root = "Assets/Editor/";//路径
     /// <summary>
     /// 加载某个资源 同步的
     /// </summary>

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Test : MonoBehaviour
@@ -8,13 +9,10 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UWRManager.Instance.LoadRes<string>("/test.txt", (str) =>
+        ABResManager.Instance.LoadResAsync<GameObject>("model", "Cube", (obj) =>
         {
-            Debug.Log(str);
-        }, () =>
-        {
-            Debug.Log("failed");
-        });
+            Instantiate(obj);
+        }, false, false);
         //ABManager.Instance.LoadRes<GameObject>("model", "Cube", (obj) =>
         //{
         //    Instantiate(obj);
