@@ -405,15 +405,7 @@
         395,
         396,
         397,
-        398,
-        399,
-        400,
-        401,
-        402,
-        403,
-        404,
-        405,
-        406
+        398
       ],
       "DebugActionIndex": 0
     },
@@ -1325,6 +1317,12 @@
         326,
         327,
         328,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
         337,
         338,
         339,
@@ -1384,15 +1382,7 @@
         393,
         394,
         395,
-        396,
-        397,
-        398,
-        399,
-        400,
-        401,
-        402,
-        403,
-        404
+        396
       ],
       "DebugActionIndex": 6
     },
@@ -39989,7 +39979,7 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 1709946,
-      "PayloadLength": 31558,
+      "PayloadLength": 31611,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "InputFlags": [],
@@ -40005,7 +39995,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 1741590,
+      "PayloadOffset": 1741643,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -40272,6 +40262,7 @@
         "Assets/Framework/Core/Pool/PoolObj.cs",
         "Assets/Framework/Core/PoolObjMove.cs",
         "Assets/Framework/Core/Resource/ABManager.cs",
+        "Assets/Framework/Core/Resource/EditorResManager.cs",
         "Assets/Framework/Core/Resource/ResourcesManager.cs",
         "Assets/Framework/Core/Resource/Test.cs",
         "Assets/Framework/Core/Singleton/MonoSingleton.cs",
@@ -40285,6 +40276,7 @@
         "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp.rsp"
       ],
       "InputFlags": [
+        0,
         0,
         0,
         0,
@@ -40907,7 +40899,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 1741685,
+      "PayloadOffset": 1741738,
       "PayloadLength": 9972,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -41288,1104 +41280,6 @@
       "DebugActionIndex": 330
     },
     {
-      "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt",
-      "DisplayName": "Writing Assembly-CSharp-Editor.UnityAdditionalFile.txt",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 1751769,
-      "PayloadLength": 27,
-      "PayloadDebugContentSnippet": "E:\\file\\TuanJie\\MyFramework",
-      "Inputs": [],
-      "InputFlags": [],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 331
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp",
-      "DisplayName": "Writing Assembly-CSharp-Editor.rsp",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 1751888,
-      "PayloadLength": 34849,
-      "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
-      "Inputs": [],
-      "InputFlags": [],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 332
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp2",
-      "DisplayName": "Writing Assembly-CSharp-Editor.rsp2",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 1786830,
-      "PayloadLength": 0,
-      "PayloadDebugContentSnippet": "",
-      "Inputs": [],
-      "InputFlags": [],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp2"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 333
-    },
-    {
-      "Annotation": "Csc Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)",
-      "DisplayName": "Csc Assembly-CSharp-Editor",
-      "Action": "\"E:\\Program Files\\tuanjie editor\\Editor\\Data\\NetCoreRuntime\\dotnet.exe\" exec \"E:/Program Files/tuanjie editor/Editor/Data/DotNetSdkRoslyn/csc.dll\" /nostdlib /noconfig /shared \"@Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp\" \"@Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp2\"",
-      "Inputs": [
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEditor.Graphs.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.HMISimulatorModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidAppViewModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.AutoStreamingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.EmbeddedLinuxApiModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.InfinityModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.InstantAssetModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.NvApiModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.NVIDIAModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.OcclusionCullingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.OpenHarmonyJSModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TextureManagerModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.TuanjieGIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/Microsoft.Win32.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/netstandard.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.AppContext.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Buffers.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Collections.Concurrent.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Collections.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Collections.NonGeneric.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Collections.Specialized.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ComponentModel.Annotations.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ComponentModel.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ComponentModel.EventBasedAsync.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ComponentModel.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ComponentModel.TypeConverter.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Console.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Data.Common.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.Contracts.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.Debug.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.FileVersionInfo.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.Process.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.StackTrace.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.TextWriterTraceListener.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.Tools.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Diagnostics.TraceSource.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Drawing.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Dynamic.Runtime.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Globalization.Calendars.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Globalization.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Globalization.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.Compression.ZipFile.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.FileSystem.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.FileSystem.DriveInfo.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.FileSystem.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.FileSystem.Watcher.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.IsolatedStorage.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.MemoryMappedFiles.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.Pipes.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.IO.UnmanagedMemoryStream.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Linq.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Linq.Expressions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Linq.Parallel.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Linq.Queryable.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Memory.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Http.Rtc.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.NameResolution.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.NetworkInformation.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Ping.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Requests.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Security.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.Sockets.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.WebHeaderCollection.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.WebSockets.Client.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Net.WebSockets.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ObjectModel.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.DispatchProxy.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.Emit.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.Emit.ILGeneration.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.Emit.Lightweight.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Reflection.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Resources.Reader.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Resources.ResourceManager.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Resources.Writer.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.CompilerServices.VisualC.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Handles.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.InteropServices.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Numerics.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Serialization.Formatters.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Serialization.Json.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Serialization.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Runtime.Serialization.Xml.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Claims.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Cryptography.Algorithms.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Cryptography.Csp.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Cryptography.Encoding.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Cryptography.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Cryptography.X509Certificates.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.Principal.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Security.SecureString.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ServiceModel.Duplex.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ServiceModel.Http.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ServiceModel.NetTcp.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ServiceModel.Primitives.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ServiceModel.Security.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Text.Encoding.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Text.Encoding.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Text.RegularExpressions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Overlapped.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Tasks.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Tasks.Extensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Tasks.Parallel.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Thread.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.ThreadPool.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Threading.Timer.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.ValueTuple.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.ReaderWriter.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.XDocument.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.XmlDocument.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.XmlSerializer.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.XPath.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Facades/System.Xml.XPath.XDocument.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/Microsoft.CSharp.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/mscorlib.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.ComponentModel.Composition.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Core.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Data.DataSetExtensions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Data.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Drawing.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.IO.Compression.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.IO.Compression.FileSystem.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Net.Http.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Numerics.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Numerics.Vectors.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Runtime.Serialization.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Transactions.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Xml.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/TuanjieReferenceAssemblies/tuanjie-4.8-api/System.Xml.Linq.dll",
-        "Library/PackageCache/cn.tuanjie.codely.bridge@1.0.74/Plugins/Codely.Newtonsoft.Json.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/log4netPlastic.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/TextMateSharp/Onigwrap/OnigwrapPlastic.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/TextMateSharp/TextMateSharpPlastic.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/TextMateSharp/TextMateSharpPlastic.Grammars.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll",
-        "Library/PackageCache/com.unity.collab-proxy@2.12.4/Lib/Editor/unityplastic.dll",
-        "Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll",
-        "Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll",
-        "Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll",
-        "Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll",
-        "Library/PackageCache/com.unity.visualscripting@1.9.4/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll",
-        "Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Cn.Tuanjie.Codely.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Codely.Common.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.AssetBundleBrowser.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.PlasticSCM.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.Rider.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.Settings.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.TestTools.CodeCoverage.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.TextMeshPro.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.TextMeshPro.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.Timeline.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.Timeline.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Core.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Core.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Flow.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Flow.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.Shared.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.State.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualScripting.State.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VisualStudio.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Unity.VSCode.Editor.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/UnityEditor.TestRunner.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/UnityEngine.TestRunner.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll",
-        "Library/Bee/artifacts/500b0aE.dag/UnityTcp.Editor.ref.dll",
-        "Assets/Framework/Core/Resource/Editor/EditorResManager.cs",
-        "E:/Program Files/tuanjie editor/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
-        "E:/Program Files/tuanjie editor/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.rsp"
-      ],
-      "InputFlags": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        8
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.pdb",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.ref.dll"
-      ],
-      "OutputFlags": [
-        2,
-        2,
-        2
-      ],
-      "ToBuildDependencies": [
-        4,
-        100,
-        112,
-        127,
-        135,
-        142,
-        148,
-        154,
-        160,
-        166,
-        172,
-        178,
-        184,
-        190,
-        196,
-        202,
-        208,
-        214,
-        220,
-        239,
-        248,
-        255,
-        262,
-        269,
-        275,
-        283,
-        289,
-        295,
-        303,
-        309,
-        316,
-        331,
-        332,
-        333,
-        336
-      ],
-      "ToUseDependencies": [
-        331,
-        333
-      ],
-      "AllowUnexpectedOutput": true,
-      "Env": [
-        {
-          "Key": "DOTNET_MULTILEVEL_LOOKUP",
-          "Value": "0"
-        }
-      ],
-      "DebugActionIndex": 334
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp",
-      "DisplayName": "Writing Assembly-CSharp-Editor.dll.mvfrm.rsp",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 1786932,
-      "PayloadLength": 11455,
-      "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
-      "Inputs": [],
-      "InputFlags": [],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 335
-    },
-    {
-      "Annotation": "MovedFromExtractorCombine Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm",
-      "DisplayName": "MovedFromExtractorCombine Assembly-CSharp-Editor.dll",
-      "Action": "\"E:\\Program Files\\tuanjie editor\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"E:/Program Files/tuanjie editor/Editor/Data/Tools/ScriptUpdater/ApiUpdater.MovedFromExtractor.exe\" \"Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm\" \"@Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp\"",
-      "Inputs": [
-        "Library/Bee/artifacts/mvdfrm/Unity.AssetBundleBrowser.Editor.ref.dll_614633310EC786EC.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.EditorCoroutines.Editor.ref.dll_83781014B4DB8D4A.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Performance.Profile-Analyzer.Editor.ref.dll_311C88A9EBC380DA.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.PlasticSCM.Editor.ref.dll_0C0A30695FB91F25.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Rider.Editor.ref.dll_82DD26602537B210.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Settings.Editor.ref.dll_FFC71056140FE39F.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll_B2009E3C5D31A9A2.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll_28D77C43ABEBD8AF.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.TestTools.CodeCoverage.Editor.ref.dll_3AEB4E3D6622C6E8.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.Editor.ref.dll_68296F40356AA447.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.ref.dll_AB6A9C4EF63D120A.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Timeline.Editor.ref.dll_8DA9371581BDD901.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Timeline.ref.dll_F8249BBF1A1F59B0.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VSCode.Editor.ref.dll_9C78B8C6301F2728.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Core.Editor.ref.dll_CCCBCA96875E3C2C.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Core.ref.dll_DAADD097B5BFFFD5.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Flow.Editor.ref.dll_49FCB345963CC76D.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Flow.ref.dll_21BEB0EE37C97484.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.SettingsProvider.Editor.ref.dll_06F6724083C08D17.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Shared.Editor.ref.dll_E0B850A6F8AFA9C6.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.State.Editor.ref.dll_BE7ACF94A8905AD0.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.State.ref.dll_8E00DCDB61F346F1.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualStudio.Editor.ref.dll_08D7AA09E147CB5C.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.TestRunner.ref.dll_16B9A1849A3B4A54.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_E2A091BC59174F16.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_E2D7EC32C5FEA83F.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_9F0668175F397781.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityTcp.Editor.ref.dll_ADD9319D8B91DF6F.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_1AE49B0583037006.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_EDAC7CCA22BBB9D4.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_E5DB96E2FF9C082D.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.DiagnosticsModule.dll_A5AABCDD80BEE73B.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.dll_FFFFE298B7684781.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.EditorToolbarModule.dll_8ABA76CEFD3F725D.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.GraphViewModule.dll_F9A35547227AF1B2.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.HMISimulatorModule.dll_5FFF53031D9C8CB5.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.PresetsUIModule.dll_B5098E2924D349B7.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.QuickSearchModule.dll_30BA3DEAD995E394.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.SceneTemplateModule.dll_AE59E78CFC2C1C95.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.SceneViewModule.dll_3853384F179DBEC0.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreFontEngineModule.dll_621B92BA9DF76CD2.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.TextCoreTextEngineModule.dll_AA03C92C2D7B25F0.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.UIBuilderModule.dll_4E2C026395336AE6.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsModule.dll_D3AFFACB8064C090.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.UIElementsSamplesModule.dll_5B251FF8073399DD.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.UnityConnectModule.dll_761E3D106829528A.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_E0FF5323FCA24432.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_87D37BB5D8C295A8.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidAppViewModule.dll_C46D8BB7A78D9137.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_51F8E39EC9842F66.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_C828D16FFCD7C658.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_414640B935DFF471.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_74A370DC3BFC9886.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_03033A9EE1D3D14A.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.AutoStreamingModule.dll_FD6D0CDBCF30D707.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_69EB9799BBF0B02E.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_F5BAB22619B12550.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_EB8859546F5715B1.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ContentLoadModule.dll_0DB9CA1D0A7F4073.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_10CD501CCAC124FF.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_6CF1780E1DA74DF7.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_CE59297E65DF3ADC.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.dll_32A4297115DBD466.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_D3AA8AE7D8400BFD.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.EmbeddedLinuxApiModule.dll_A6406D98854FA4E0.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_7C462DB98FC52057.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_200FC4C374717DC2.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_EE3E6C0AE315BAF6.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_49718F75D80AE1DA.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_577A5704F17BCDA5.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_3B62DA05A805652B.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.InfinityModule.dll_0DC758A9B1896408.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_05E88BFAD3EE4E77.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_6979024F580BF5EE.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.InstantAssetModule.dll_B66DAB018F0E28EF.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_4116DC5FFBDDA4BC.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_34077C78B12D1849.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.NvApiModule.dll_49229EE686869E66.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.NVIDIAModule.dll_7723C9C2EE5D7F4B.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.OcclusionCullingModule.dll_B326DC290E342083.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.OpenHarmonyJSModule.dll_073CFA836A084DB9.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_C003C15A8BB8D985.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_F8417D48942F78BE.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_14CEC1609DD4BDED.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_54CB2F8E7F0CE95B.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ProfilerModule.dll_009F62B4FF38C1E9.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_A9816CF802B08493.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_7D6EBC35377588B6.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_5AFE89E51049D11E.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_DB8B95DA68A9C8F5.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_6572A049B134B5D1.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_8E049E36F19ED090.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_7CBDBEC04C5F7D96.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_5968D30997B27BA4.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_D02006AB7F7C9DE4.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_6F11AAFD54CB3249.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_C07E6A2DA4FBD412.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_E07B0E0DB0F52B9D.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_2863447F4078E4BB.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_843DFBEFC7815113.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TextureManagerModule.dll_EB6FCFEEA61C40B2.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_0E0E127E6C881352.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_8CE6E91FAF90EB6F.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.TuanjieGIModule.dll_AAF8E2CD03BEEDDE.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_D45E681382A8D9DB.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_834719E335099B54.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_7DD7E6B76EFA7CBD.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_93803A8CAE18171C.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_DFA3322437E02B81.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_637DC11F62B15335.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_FB4572A16CEBB845.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_16E7D5EA612EEF33.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_86BDA29C42978712.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_703DD1271A9A4356.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_69195EAEFC706824.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_A76CFD52FDC23FEB.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_F32589DB3038A127.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_461C22FDE0090A77.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_0DC5818E85FE54DC.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_280CBF09A465ECEF.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_92418491174916DD.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_D6194068D6C420CC.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_871C2B455BF7A368.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_08D8036D5FFE6E2A.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/UnityEditor.WindowsStandalone.Extensions.dll_84429A9BC1D8890C.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Plastic.Antlr3.Runtime.dll_1CA22262BA8948B6.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.Plastic.Newtonsoft.Json.dll_1963981EAB24D61F.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.IonicZip.dll_840FAE5C8A141D5B.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.YamlDotNet.dll_4A5905A13DE9A491.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.TextureAssets.dll_E1772EF4FEB70289.mvfrm",
-        "Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Antlr3.Runtime.dll_FBC62C826EB2B4B0.mvfrm",
-        "E:/Program Files/tuanjie editor/Editor/Data/Tools/ScriptUpdater/ApiUpdater.MovedFromExtractor.exe",
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp"
-      ],
-      "InputFlags": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "ToBuildDependencies": [
-        5,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61,
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
-        90,
-        91,
-        92,
-        93,
-        94,
-        101,
-        102,
-        103,
-        104,
-        105,
-        106,
-        113,
-        114,
-        115,
-        116,
-        117,
-        118,
-        119,
-        120,
-        121,
-        128,
-        129,
-        136,
-        227,
-        240,
-        241,
-        242,
-        249,
-        256,
-        263,
-        276,
-        277,
-        296,
-        297,
-        310,
-        317,
-        318,
-        319,
-        320,
-        321,
-        322,
-        323,
-        324,
-        325,
-        326,
-        327,
-        328,
-        335
-      ],
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 336
-    },
-    {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.dll",
       "DisplayName": "Copying UnityEngine.TestRunner.dll",
       "ActionType": "CopyFiles",
@@ -42404,7 +41298,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 337
+      "DebugActionIndex": 331
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEngine.TestRunner.pdb",
@@ -42425,7 +41319,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 338
+      "DebugActionIndex": 332
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.dll",
@@ -42446,7 +41340,7 @@
       "ToBuildDependencies": [
         112
       ],
-      "DebugActionIndex": 339
+      "DebugActionIndex": 333
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEditor.TestRunner.pdb",
@@ -42467,7 +41361,7 @@
       "ToBuildDependencies": [
         112
       ],
-      "DebugActionIndex": 340
+      "DebugActionIndex": 334
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.dll",
@@ -42488,7 +41382,7 @@
       "ToBuildDependencies": [
         166
       ],
-      "DebugActionIndex": 341
+      "DebugActionIndex": 335
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Rider.Editor.pdb",
@@ -42509,7 +41403,7 @@
       "ToBuildDependencies": [
         166
       ],
-      "DebugActionIndex": 342
+      "DebugActionIndex": 336
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VSCode.Editor.dll",
@@ -42530,7 +41424,7 @@
       "ToBuildDependencies": [
         202
       ],
-      "DebugActionIndex": 343
+      "DebugActionIndex": 337
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VSCode.Editor.pdb",
@@ -42551,7 +41445,7 @@
       "ToBuildDependencies": [
         202
       ],
-      "DebugActionIndex": 344
+      "DebugActionIndex": 338
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll",
@@ -42572,7 +41466,7 @@
       "ToBuildDependencies": [
         214
       ],
-      "DebugActionIndex": 345
+      "DebugActionIndex": 339
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb",
@@ -42593,7 +41487,7 @@
       "ToBuildDependencies": [
         214
       ],
-      "DebugActionIndex": 346
+      "DebugActionIndex": 340
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEngine.UI.dll",
@@ -42614,7 +41508,7 @@
       "ToBuildDependencies": [
         100
       ],
-      "DebugActionIndex": 347
+      "DebugActionIndex": 341
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEngine.UI.pdb",
@@ -42635,7 +41529,7 @@
       "ToBuildDependencies": [
         100
       ],
-      "DebugActionIndex": 348
+      "DebugActionIndex": 342
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEditor.UI.dll",
@@ -42656,7 +41550,7 @@
       "ToBuildDependencies": [
         127
       ],
-      "DebugActionIndex": 349
+      "DebugActionIndex": 343
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityEditor.UI.pdb",
@@ -42677,7 +41571,7 @@
       "ToBuildDependencies": [
         127
       ],
-      "DebugActionIndex": 350
+      "DebugActionIndex": 344
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Codely.Common.dll",
@@ -42698,7 +41592,7 @@
       "ToBuildDependencies": [
         135
       ],
-      "DebugActionIndex": 351
+      "DebugActionIndex": 345
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Codely.Common.pdb",
@@ -42719,7 +41613,7 @@
       "ToBuildDependencies": [
         135
       ],
-      "DebugActionIndex": 352
+      "DebugActionIndex": 346
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.AssetBundleBrowser.Editor.dll",
@@ -42740,7 +41634,7 @@
       "ToBuildDependencies": [
         142
       ],
-      "DebugActionIndex": 353
+      "DebugActionIndex": 347
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.AssetBundleBrowser.Editor.pdb",
@@ -42761,7 +41655,7 @@
       "ToBuildDependencies": [
         142
       ],
-      "DebugActionIndex": 354
+      "DebugActionIndex": 348
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll",
@@ -42782,7 +41676,7 @@
       "ToBuildDependencies": [
         148
       ],
-      "DebugActionIndex": 355
+      "DebugActionIndex": 349
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.pdb",
@@ -42803,7 +41697,7 @@
       "ToBuildDependencies": [
         148
       ],
-      "DebugActionIndex": 356
+      "DebugActionIndex": 350
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll",
@@ -42824,7 +41718,7 @@
       "ToBuildDependencies": [
         154
       ],
-      "DebugActionIndex": 357
+      "DebugActionIndex": 351
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.pdb",
@@ -42845,7 +41739,7 @@
       "ToBuildDependencies": [
         154
       ],
-      "DebugActionIndex": 358
+      "DebugActionIndex": 352
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll",
@@ -42866,7 +41760,7 @@
       "ToBuildDependencies": [
         160
       ],
-      "DebugActionIndex": 359
+      "DebugActionIndex": 353
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb",
@@ -42887,7 +41781,7 @@
       "ToBuildDependencies": [
         160
       ],
-      "DebugActionIndex": 360
+      "DebugActionIndex": 354
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Settings.Editor.dll",
@@ -42908,7 +41802,7 @@
       "ToBuildDependencies": [
         172
       ],
-      "DebugActionIndex": 361
+      "DebugActionIndex": 355
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Settings.Editor.pdb",
@@ -42929,7 +41823,7 @@
       "ToBuildDependencies": [
         172
       ],
-      "DebugActionIndex": 362
+      "DebugActionIndex": 356
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll",
@@ -42950,7 +41844,7 @@
       "ToBuildDependencies": [
         178
       ],
-      "DebugActionIndex": 363
+      "DebugActionIndex": 357
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.pdb",
@@ -42971,7 +41865,7 @@
       "ToBuildDependencies": [
         178
       ],
-      "DebugActionIndex": 364
+      "DebugActionIndex": 358
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll",
@@ -42992,7 +41886,7 @@
       "ToBuildDependencies": [
         184
       ],
-      "DebugActionIndex": 365
+      "DebugActionIndex": 359
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.pdb",
@@ -43013,7 +41907,7 @@
       "ToBuildDependencies": [
         184
       ],
-      "DebugActionIndex": 366
+      "DebugActionIndex": 360
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.dll",
@@ -43034,7 +41928,7 @@
       "ToBuildDependencies": [
         190
       ],
-      "DebugActionIndex": 367
+      "DebugActionIndex": 361
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.pdb",
@@ -43055,7 +41949,7 @@
       "ToBuildDependencies": [
         190
       ],
-      "DebugActionIndex": 368
+      "DebugActionIndex": 362
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Timeline.dll",
@@ -43076,7 +41970,7 @@
       "ToBuildDependencies": [
         196
       ],
-      "DebugActionIndex": 369
+      "DebugActionIndex": 363
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Timeline.pdb",
@@ -43097,7 +41991,7 @@
       "ToBuildDependencies": [
         196
       ],
-      "DebugActionIndex": 370
+      "DebugActionIndex": 364
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -43118,7 +42012,7 @@
       "ToBuildDependencies": [
         208
       ],
-      "DebugActionIndex": 371
+      "DebugActionIndex": 365
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.pdb",
@@ -43139,7 +42033,7 @@
       "ToBuildDependencies": [
         208
       ],
-      "DebugActionIndex": 372
+      "DebugActionIndex": 366
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Cn.Tuanjie.Codely.Editor.dll",
@@ -43160,7 +42054,7 @@
       "ToBuildDependencies": [
         220
       ],
-      "DebugActionIndex": 373
+      "DebugActionIndex": 367
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Cn.Tuanjie.Codely.Editor.pdb",
@@ -43181,7 +42075,7 @@
       "ToBuildDependencies": [
         220
       ],
-      "DebugActionIndex": 374
+      "DebugActionIndex": 368
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll",
@@ -43202,7 +42096,7 @@
       "ToBuildDependencies": [
         226
       ],
-      "DebugActionIndex": 375
+      "DebugActionIndex": 369
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb",
@@ -43223,7 +42117,7 @@
       "ToBuildDependencies": [
         226
       ],
-      "DebugActionIndex": 376
+      "DebugActionIndex": 370
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.Entities.dll",
@@ -43244,7 +42138,7 @@
       "ToBuildDependencies": [
         233
       ],
-      "DebugActionIndex": 377
+      "DebugActionIndex": 371
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.PlasticSCM.Editor.Entities.pdb",
@@ -43265,7 +42159,7 @@
       "ToBuildDependencies": [
         233
       ],
-      "DebugActionIndex": 378
+      "DebugActionIndex": 372
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll",
@@ -43286,7 +42180,7 @@
       "ToBuildDependencies": [
         239
       ],
-      "DebugActionIndex": 379
+      "DebugActionIndex": 373
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.pdb",
@@ -43307,7 +42201,7 @@
       "ToBuildDependencies": [
         239
       ],
-      "DebugActionIndex": 380
+      "DebugActionIndex": 374
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll",
@@ -43328,7 +42222,7 @@
       "ToBuildDependencies": [
         248
       ],
-      "DebugActionIndex": 381
+      "DebugActionIndex": 375
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb",
@@ -43349,7 +42243,7 @@
       "ToBuildDependencies": [
         248
       ],
-      "DebugActionIndex": 382
+      "DebugActionIndex": 376
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.dll",
@@ -43370,7 +42264,7 @@
       "ToBuildDependencies": [
         255
       ],
-      "DebugActionIndex": 383
+      "DebugActionIndex": 377
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.Timeline.Editor.pdb",
@@ -43391,7 +42285,7 @@
       "ToBuildDependencies": [
         255
       ],
-      "DebugActionIndex": 384
+      "DebugActionIndex": 378
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll",
@@ -43412,7 +42306,7 @@
       "ToBuildDependencies": [
         262
       ],
-      "DebugActionIndex": 385
+      "DebugActionIndex": 379
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.pdb",
@@ -43433,7 +42327,7 @@
       "ToBuildDependencies": [
         262
       ],
-      "DebugActionIndex": 386
+      "DebugActionIndex": 380
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll",
@@ -43454,7 +42348,7 @@
       "ToBuildDependencies": [
         269
       ],
-      "DebugActionIndex": 387
+      "DebugActionIndex": 381
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.pdb",
@@ -43475,7 +42369,7 @@
       "ToBuildDependencies": [
         269
       ],
-      "DebugActionIndex": 388
+      "DebugActionIndex": 382
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll",
@@ -43496,7 +42390,7 @@
       "ToBuildDependencies": [
         275
       ],
-      "DebugActionIndex": 389
+      "DebugActionIndex": 383
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.pdb",
@@ -43517,7 +42411,7 @@
       "ToBuildDependencies": [
         275
       ],
-      "DebugActionIndex": 390
+      "DebugActionIndex": 384
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.dll",
@@ -43538,7 +42432,7 @@
       "ToBuildDependencies": [
         283
       ],
-      "DebugActionIndex": 391
+      "DebugActionIndex": 385
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.pdb",
@@ -43559,7 +42453,7 @@
       "ToBuildDependencies": [
         283
       ],
-      "DebugActionIndex": 392
+      "DebugActionIndex": 386
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityTcp.Editor.dll",
@@ -43580,7 +42474,7 @@
       "ToBuildDependencies": [
         289
       ],
-      "DebugActionIndex": 393
+      "DebugActionIndex": 387
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/UnityTcp.Editor.pdb",
@@ -43601,7 +42495,7 @@
       "ToBuildDependencies": [
         289
       ],
-      "DebugActionIndex": 394
+      "DebugActionIndex": 388
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll",
@@ -43622,7 +42516,7 @@
       "ToBuildDependencies": [
         295
       ],
-      "DebugActionIndex": 395
+      "DebugActionIndex": 389
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.pdb",
@@ -43643,7 +42537,7 @@
       "ToBuildDependencies": [
         295
       ],
-      "DebugActionIndex": 396
+      "DebugActionIndex": 390
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll",
@@ -43664,7 +42558,7 @@
       "ToBuildDependencies": [
         303
       ],
-      "DebugActionIndex": 397
+      "DebugActionIndex": 391
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.pdb",
@@ -43685,7 +42579,7 @@
       "ToBuildDependencies": [
         303
       ],
-      "DebugActionIndex": 398
+      "DebugActionIndex": 392
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll",
@@ -43706,7 +42600,7 @@
       "ToBuildDependencies": [
         309
       ],
-      "DebugActionIndex": 399
+      "DebugActionIndex": 393
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.pdb",
@@ -43727,7 +42621,7 @@
       "ToBuildDependencies": [
         309
       ],
-      "DebugActionIndex": 400
+      "DebugActionIndex": 394
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll",
@@ -43748,7 +42642,7 @@
       "ToBuildDependencies": [
         316
       ],
-      "DebugActionIndex": 401
+      "DebugActionIndex": 395
     },
     {
       "Annotation": "CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb",
@@ -43769,49 +42663,7 @@
       "ToBuildDependencies": [
         316
       ],
-      "DebugActionIndex": 402
-    },
-    {
-      "Annotation": "CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll",
-      "DisplayName": "Copying Assembly-CSharp-Editor.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.dll"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "Library/ScriptAssemblies/Assembly-CSharp-Editor.dll"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "ToBuildDependencies": [
-        334
-      ],
-      "DebugActionIndex": 403
-    },
-    {
-      "Annotation": "CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb",
-      "DisplayName": "Copying Assembly-CSharp-Editor.pdb",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/500b0aE.dag/Assembly-CSharp-Editor.pdb"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "ToBuildDependencies": [
-        334
-      ],
-      "DebugActionIndex": 404
+      "DebugActionIndex": 396
     },
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
@@ -43858,18 +42710,18 @@
         2
       ],
       "ToBuildDependencies": [
-        337,
-        347,
-        367,
-        369,
-        371,
-        387,
-        391,
-        401
+        331,
+        341,
+        361,
+        363,
+        365,
+        381,
+        385,
+        395
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 405
+      "DebugActionIndex": 397
     },
     {
       "Annotation": "ScriptAssembliesAndTypeDB",
@@ -43880,9 +42732,9 @@
       "OutputFlags": [],
       "ToBuildDependencies": [
         6,
-        405
+        397
       ],
-      "DebugActionIndex": 406
+      "DebugActionIndex": 398
     }
   ],
   "FileSignatures": [
@@ -44142,7 +42994,7 @@
         "NamedNodes": {
           "all_tundra_nodes": 0,
           "ScriptAssemblies": 6,
-          "ScriptAssembliesAndTypeDB": 406
+          "ScriptAssembliesAndTypeDB": 398
         }
 ,  "DefaultNodes": [
     0

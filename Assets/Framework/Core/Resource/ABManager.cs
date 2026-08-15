@@ -38,96 +38,124 @@ public class ABManager : Singleton<ABManager>
 #endif
         }
     }
-    /// <summary>
-    /// 同步加载ab包
-    /// </summary>
-    /// <param name="abName"></param>
-    public void LoadAB(string abName)
+    private void LoadMainAB()
     {
-        //加载依赖AB包
-        if(mainAB == null)
+        if (mainAB == null)
         {
             mainAB = AssetBundle.LoadFromFile(abPath + mainABName);
             manifestAB = mainAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
         }
+    }
+    /// <summary>
+    /// 同步加载ab包
+    /// </summary>
+    /// <param name="abName"></param>
+    private IEnumerator ReadllyLoadAB(string abName,bool isSync)
+    {
+        //加载依赖AB包
+        LoadMainAB();
         string[] dependencies = manifestAB.GetAllDependencies(abName);
         foreach(string name in dependencies)
         {
-            LoadAB(name);
+            //LoadAB(name);
+            yield return ReadllyLoadAB(name, isSync);
         }
         if (!abDic.ContainsKey(abName))
         {
-            AssetBundle ab = AssetBundle.LoadFromFile(abPath + abName);
-            abDic.Add(abName, ab);
+            //说明没有加载过
+            if (isSync)
+            {
+                //同步加载
+                AssetBundle ab = AssetBundle.LoadFromFile(abPath + abName);
+                abDic.Add(abName, ab);
+            }
+            else
+            {
+                abDic.Add(abName, null);
+                AssetBundleCreateRequest abcr = AssetBundle.LoadFromFileAsync(abPath + abName);
+                yield return abcr;
+                abDic[abName] = abcr.assetBundle;
+            }
+        }
+        else
+        {
+            //加载过
+            if (abDic[abName] == null)
+            {
+                //异步加载中没有加载完
+                while (abDic[abName] == null)
+                {
+                    yield return null;//一直等待直到异步加载完成
+                }
+            }
+            //加载好了就不用什么操作了
         }
     }
-    //同步加载
     /// <summary>
-    /// 同步加载AB包的资源
-    /// </summary>
-    /// <param name="abName"></param>
-    /// <param name="resName"></param>
-    /// <returns></returns>
-    public UnityEngine.Object LoadRes(string abName,string resName)
-    {
-        LoadAB(abName);
-        AssetBundle ab = abDic[abName];
-        return ab.LoadAsset(resName);
-    }
-    public UnityEngine.Object LoadRes(string abName, string resName, System.Type type)
-    {
-        LoadAB(abName);
-        AssetBundle ab = abDic[abName];
-        return ab.LoadAsset(resName,type);
-    }
-    public T LoadRes<T>(string abName, string resName) where T:UnityEngine.Object
-    {
-        LoadAB(abName);
-        AssetBundle ab = abDic[abName];
-        return ab.LoadAsset<T>(resName);
-    }
-    //异步加载 这里先写的是同步加载AB包 再异步加载指定的资源
-    /// <summary>
-    /// 异步加载AB包中的资源
+    /// 异步或者同步加载AB包中的资源
     /// </summary>
     /// <param name="abName"></param>
     /// <param name="resName"></param>
     /// <param name="callback"></param>
-    public void LoadResAsync(string abName, string resName,UnityAction<UnityEngine.Object> callback)
+    public void LoadRes(string abName, string resName,UnityAction<UnityEngine.Object> callback,bool isSync = true)
     {
-        Mono.Instance.StartCoroutine(reallyLoadAsync(abName, resName, callback));
+        Mono.Instance.StartCoroutine(reallyLoadAsync(abName, resName, callback, isSync));
     }
-    private IEnumerator reallyLoadAsync(string abName, string resName, UnityAction<UnityEngine.Object> callback)
+    private IEnumerator reallyLoadAsync(string abName, string resName, UnityAction<UnityEngine.Object> callback, bool isSync)
     {
-        LoadAB(abName);
+        yield return ReadllyLoadAB(abName,isSync);
         AssetBundle ab = abDic[abName];
-        AssetBundleRequest abr = ab.LoadAssetAsync(resName);
-        yield return abr;
-        callback?.Invoke(abr.asset);
+        if (isSync)
+        {
+            //同步加载资源
+            callback?.Invoke(ab.LoadAsset(resName));
+        }
+        else
+        {
+            AssetBundleRequest abr = ab.LoadAssetAsync(resName);
+            yield return abr;
+            callback?.Invoke(abr.asset);
+        }
     }
-    public void LoadResAsync(string abName, string resName, System.Type type, UnityAction<UnityEngine.Object> callback)
+    public void LoadRes(string abName, string resName, System.Type type, UnityAction<UnityEngine.Object> callback, bool isSync = true)
     {
-        Mono.Instance.StartCoroutine(reallyLoadAsync(abName, resName, type, callback));
+        Mono.Instance.StartCoroutine(reallyLoadAsync(abName, resName, type, callback,isSync));
     }
-    private IEnumerator reallyLoadAsync(string abName, string resName, System.Type type, UnityAction<UnityEngine.Object> callback)
+    private IEnumerator reallyLoadAsync(string abName, string resName, System.Type type, UnityAction<UnityEngine.Object> callback, bool isSync)
     {
-        LoadAB(abName);
+        yield return ReadllyLoadAB(abName, isSync);
         AssetBundle ab = abDic[abName];
-        AssetBundleRequest abr = ab.LoadAssetAsync(resName,type);
-        yield return abr;
-        callback?.Invoke(abr.asset);
+        if (isSync)
+        {
+            //同步加载资源
+            callback?.Invoke(ab.LoadAsset(resName,type));
+        }
+        else
+        {
+            AssetBundleRequest abr = ab.LoadAssetAsync(resName, type);
+            yield return abr;
+            callback?.Invoke(abr.asset);
+        }
     }
-    public void LoadResAsync<T>(string abName, string resName, UnityAction<T> callback) where T:UnityEngine.Object
+    public void LoadRes<T>(string abName, string resName, UnityAction<T> callback, bool isSync = true) where T:UnityEngine.Object
     {
-        Mono.Instance.StartCoroutine(reallyLoadAsync<T>(abName, resName, callback));
+        Mono.Instance.StartCoroutine(reallyLoadAsync<T>(abName, resName, callback, isSync));
     }
-    private IEnumerator reallyLoadAsync<T>(string abName, string resName, UnityAction<T> callback) where T : UnityEngine.Object
+    private IEnumerator reallyLoadAsync<T>(string abName, string resName, UnityAction<T> callback, bool isSync) where T : UnityEngine.Object
     {
-        LoadAB(abName);
+        yield return ReadllyLoadAB(abName, isSync);
         AssetBundle ab = abDic[abName];
-        AssetBundleRequest abr = ab.LoadAssetAsync<T>(resName);
-        yield return abr;
-        callback?.Invoke(abr.asset as T);
+        if (isSync)
+        {
+            //同步加载资源
+            callback?.Invoke(ab.LoadAsset<T>(resName));
+        }
+        else
+        {
+            AssetBundleRequest abr = ab.LoadAssetAsync<T>(resName);
+            yield return abr;
+            callback?.Invoke(abr.asset as T);
+        }
     }
     /// <summary>
     /// 释放某个AB包
@@ -138,6 +166,11 @@ public class ABManager : Singleton<ABManager>
     {
         if (abDic.ContainsKey(abName))
         {
+            if (abDic[abName] == null)
+            {
+                //异步加载中
+                return;
+            }
             abDic[abName].Unload(unLoadAll);
             abDic.Remove(abName);
             Debug.Log("卸载" + abName);
@@ -149,6 +182,7 @@ public class ABManager : Singleton<ABManager>
     /// <param name="unLoadAll"></param>
     public void UnLoadAllAssetBundle(bool unLoadAll)
     {
+        Mono.Instance.StopAllCoroutines();
         AssetBundle.UnloadAllAssetBundles(unLoadAll);
         abDic.Clear();
         mainAB = null;

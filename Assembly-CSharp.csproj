@@ -70,6 +70,7 @@
     <Compile Include="Assets\Framework\Core\Test.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ResourcesManager.cs" />
     <Compile Include="Assets\Framework\Core\Monster.cs" />
+    <Compile Include="Assets\Framework\Core\Resource\EditorResManager.cs" />
     <Compile Include="Assets\Framework\Core\Player.cs" />
     <Compile Include="Assets\Framework\Core\Resource\Test.cs" />
     <Compile Include="Assets\Framework\Core\Event\EventManager.cs" />
@@ -1022,12 +1023,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AssetBundleBrowser.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
