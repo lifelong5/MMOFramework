@@ -8,10 +8,17 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ABManager.Instance.LoadRes<GameObject>("model", "Cube", (obj) =>
+        UWRManager.Instance.LoadRes<string>("/test.txt", (str) =>
         {
-            Instantiate(obj);
-        },true);
+            Debug.Log(str);
+        }, () =>
+        {
+            Debug.Log("failed");
+        });
+        //ABManager.Instance.LoadRes<GameObject>("model", "Cube", (obj) =>
+        //{
+        //    Instantiate(obj);
+        //},true);
         //ABManager.Instance.UnLoad("model", true);
         //ABManager.Instance.UnLoadAllAssetBundle(true);
         //ab = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/" + "model");

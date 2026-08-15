@@ -66,6 +66,7 @@
     <Compile Include="Assets\Framework\Core\Pool\PoolManager.cs" />
     <Compile Include="Assets\Framework\Core\Event\E_EventType.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ABManager.cs" />
+    <Compile Include="Assets\Framework\Core\Resource\UWRManager.cs" />
     <Compile Include="Assets\Framework\Core\Mono.cs" />
     <Compile Include="Assets\Framework\Core\Test.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ResourcesManager.cs" />
@@ -77,6 +78,9 @@
     <Compile Include="Assets\Framework\Core\Singleton\MonoSingleton.cs" />
     <Compile Include="Assets\Framework\Core\Singleton\Singleton.cs" />
     <Compile Include="Assets\Framework\Core\PoolObjMove.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\StreamingAssets\test.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
