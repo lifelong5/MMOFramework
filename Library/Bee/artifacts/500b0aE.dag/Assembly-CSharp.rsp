@@ -386,6 +386,8 @@
 "Assets/Framework/Core/Event/E_EventType.cs"
 "Assets/Framework/Core/Mono.cs"
 "Assets/Framework/Core/Monster.cs"
+"Assets/Framework/Core/Music/MusicMain.cs"
+"Assets/Framework/Core/Music/MusicManager.cs"
 "Assets/Framework/Core/Player.cs"
 "Assets/Framework/Core/Pool/PoolManager.cs"
 "Assets/Framework/Core/Pool/PoolObj.cs"

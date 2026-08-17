@@ -7,13 +7,14 @@ public class ABResManager : Singleton<ABResManager>
 {
     private ABResManager() { }
 
-    public void LoadResAsync<T>(string abName, string resName, UnityAction<T> callback, bool isSync, bool debug) where T : UnityEngine.Object
+    public void LoadResAsync<T>(string abName, string resName, UnityAction<T> callback, bool isSync, bool debug = true) where T : UnityEngine.Object
     {
 #if UNITY_EDITOR
         if (debug)
         {
             //”√editor
             T obj = EditorResManager.Instance.LoadEditorRes<T>($"{abName}/{resName}");
+            Debug.Log("obj:" + obj);
             callback?.Invoke(obj);
         }
         else

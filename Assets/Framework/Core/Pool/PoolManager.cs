@@ -106,7 +106,7 @@ public class PoolManager : Singleton<PoolManager>
     //存放对象的对象池父节点
     private GameObject root;
     //是否整理对象池结构
-    public bool useLayout = false;
+    public bool useLayout = true;
 
     private PoolManager()
     {
