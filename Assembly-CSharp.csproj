@@ -66,9 +66,12 @@
     <Compile Include="Assets\Framework\Core\Pool\PoolManager.cs" />
     <Compile Include="Assets\Framework\Core\Event\E_EventType.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ABManager.cs" />
+    <Compile Include="Assets\Game\Grid\AStarPathFinder.cs" />
     <Compile Include="Assets\Framework\Core\Resource\UWRManager.cs" />
+    <Compile Include="Assets\Game\Grid\PathTest.cs" />
     <Compile Include="Assets\Framework\Core\Mono.cs" />
     <Compile Include="Assets\Framework\Core\Test.cs" />
+    <Compile Include="Assets\Game\Grid\GridManager.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ResourcesManager.cs" />
     <Compile Include="Assets\Framework\Core\Monster.cs" />
     <Compile Include="Assets\Framework\Core\Resource\EditorResManager.cs" />

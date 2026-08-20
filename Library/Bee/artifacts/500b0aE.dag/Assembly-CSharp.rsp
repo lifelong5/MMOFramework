@@ -403,6 +403,9 @@
 "Assets/Framework/Core/Test.cs"
 "Assets/Game/GameEntry.cs"
 "Assets/Game/GameLauncher.cs"
+"Assets/Game/Grid/AStarPathFinder.cs"
+"Assets/Game/Grid/GridManager.cs"
+"Assets/Game/Grid/PathTest.cs"
 -langversion:9.0
 /deterministic
 /optimize+
