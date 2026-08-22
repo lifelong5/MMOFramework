@@ -12,7 +12,7 @@ public class Test : MonoBehaviour
         ABResManager.Instance.LoadResAsync<GameObject>("model", "Cube", (obj) =>
         {
             Instantiate(obj);
-        }, false, false);
+        }, false);
         //ABManager.Instance.LoadRes<GameObject>("model", "Cube", (obj) =>
         //{
         //    Instantiate(obj);

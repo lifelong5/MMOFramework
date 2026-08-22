@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 4028238881
+CRC: 4014092150
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -8,4 +8,7 @@ AssetBundleManifest:
         Dependency_0: material
     Info_1:
       Name: material
+      Dependencies: {}
+    Info_2:
+      Name: ui
       Dependencies: {}

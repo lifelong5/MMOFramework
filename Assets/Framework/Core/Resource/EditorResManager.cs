@@ -20,6 +20,10 @@ public class EditorResManager : Singleton<EditorResManager>
     {
 #if UNITY_EDITOR
         string assetPath = root + path;
+        if(typeof(T) == typeof(GameObject))
+        {
+            assetPath += ".prefab";
+        }
         return AssetDatabase.LoadAssetAtPath<T>(assetPath);
 #else
         return null;

@@ -5,12 +5,13 @@ using UnityEngine.Events;
 
 public class ABResManager : Singleton<ABResManager>
 {
+    private bool isDebug = false;
     private ABResManager() { }
 
-    public void LoadResAsync<T>(string abName, string resName, UnityAction<T> callback, bool isSync, bool debug = true) where T : UnityEngine.Object
+    public void LoadResAsync<T>(string abName, string resName, UnityAction<T> callback, bool isSync) where T : UnityEngine.Object
     {
 #if UNITY_EDITOR
-        if (debug)
+        if (isDebug)
         {
             //”√editor
             T obj = EditorResManager.Instance.LoadEditorRes<T>($"{abName}/{resName}");

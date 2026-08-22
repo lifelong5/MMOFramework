@@ -3088,13 +3088,15 @@ m_ResolvedPackages:
     - 2.0.25
     - 2.0.26
     - 2.0.27
+    - 2.0.28
     compatible:
     - 2.0.22
     - 2.0.23
     - 2.0.25
     - 2.0.26
     - 2.0.27
-    recommended: 2.0.27
+    - 2.0.28
+    recommended: 2.0.28
     deprecated: []
   dependencies:
   - name: com.unity.test-framework

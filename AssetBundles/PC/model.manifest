@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1727679985
+CRC: 4083213726
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ce3701a1cf2593bd7ae7ff2d6a76d2e1
+    Hash: 898d2f3565dfbabc30a5088b1b664468
   TypeTreeHash:
     serializedVersion: 2
     Hash: ff63182f0b1125ba7b00ecfd18bdad00
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: ce3701a1cf2593bd7ae7ff2d6a76d2e1
+    Hash: 898d2f3565dfbabc30a5088b1b664468
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -32,7 +32,9 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Editor/ArtRes/Cube.prefab
+- Assets/Editor/model/Sphere.prefab
+- Assets/Editor/model/Cube.prefab
 - Assets/Editor/ArtRes/Sphere.prefab
+- Assets/Editor/ArtRes/Cube.prefab
 Dependencies:
 - E:/file/TuanJie/MyFramework/AssetBundles/PC/material

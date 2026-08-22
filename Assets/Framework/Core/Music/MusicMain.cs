@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Overlays;
+
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class MusicMain : MonoBehaviour
 {
     private float v;
     private AudioSource sound2;
+#if UNITY_EDITOR
     private void OnGUI()
     {
         if (GUILayout.Button("²¥·ÅBGM"))
@@ -48,4 +47,5 @@ public class MusicMain : MonoBehaviour
             MusicManager.Instance.StopOrPlaySound(true);
         }
     }
+#endif
 }
