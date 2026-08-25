@@ -398,6 +398,7 @@
 "Assets/Framework/Core/Resource/ResourcesManager.cs"
 "Assets/Framework/Core/Resource/Test.cs"
 "Assets/Framework/Core/Resource/UWRManager.cs"
+"Assets/Framework/Core/Scene/SceneMgr.cs"
 "Assets/Framework/Core/Singleton/MonoSingleton.cs"
 "Assets/Framework/Core/Singleton/Singleton.cs"
 "Assets/Framework/Core/Test.cs"

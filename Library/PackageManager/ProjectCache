@@ -100,6 +100,7 @@ m_ResolvedPackages:
     - 1.0.73
     - 1.0.74
     - 1.0.75
+    - 1.0.76
     compatible:
     - 1.0.6
     - 1.0.7
@@ -158,6 +159,7 @@ m_ResolvedPackages:
     - 1.0.73
     - 1.0.74
     - 1.0.75
+    - 1.0.76
     recommended: 
     deprecated: []
   dependencies:
@@ -3544,6 +3546,7 @@ m_ResolvedPackages:
     - 1.4.4
     - 1.4.5
     - 1.4.6
+    - 1.4.7-t1
     compatible:
     - 1.1.33
     - 1.3.0
@@ -3558,6 +3561,7 @@ m_ResolvedPackages:
     - 1.4.4
     - 1.4.5
     - 1.4.6
+    - 1.4.7-t1
     recommended: 1.1.33
     deprecated: []
   dependencies:

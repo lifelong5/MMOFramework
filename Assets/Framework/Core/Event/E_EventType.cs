@@ -5,5 +5,6 @@ using UnityEngine;
 public enum E_EventType
 {
     E_Monster_Dead,
-    E_Player_Dead
+    E_Player_Dead,
+    E_SceneLoadChange//场景加载进度变化事件
 }
