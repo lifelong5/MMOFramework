@@ -384,6 +384,8 @@
 -analyzer:"E:/Program Files/tuanjie editor/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Framework/Core/Event/EventManager.cs"
 "Assets/Framework/Core/Event/E_EventType.cs"
+"Assets/Framework/Core/Input/InputManager.cs"
+"Assets/Framework/Core/Input/InputText.cs"
 "Assets/Framework/Core/Mono.cs"
 "Assets/Framework/Core/Monster.cs"
 "Assets/Framework/Core/Music/MusicMain.cs"
