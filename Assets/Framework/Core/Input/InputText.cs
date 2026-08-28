@@ -29,6 +29,23 @@ public class InputText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            InputManager.Instance.StartChangeInput((data) =>
+            {
+                if(data.keycodeOrMouse == InputInfo.KeycodeOrMouse.Key)
+                {
+                    //改为按键
+                    Debug.Log("改键成功" + data.keycode);
+                    InputManager.Instance.ChangeKeyCode(E_EventType.E_Skill1, data.keycode, InputInfo.InputType.Down);
+                }
+                else
+                {
+                    //改为鼠标
+                    Debug.Log("改键成功" + data.mouseID);
+                    InputManager.Instance.ChangeMouse(E_EventType.E_Skill1, data.mouseID, InputInfo.InputType.Down);
+                }
+            });
+        }
     }
 }

@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 public class InputInfo
 {
     public enum KeycodeOrMouse
@@ -40,9 +42,14 @@ public class InputManager : Singleton<InputManager>
     private bool openAxis = false;
     private bool openInput = false;
     private Dictionary<E_EventType, InputInfo> inputDic = new Dictionary<E_EventType, InputInfo>();
+    private UnityAction<InputInfo> inputCallback = null;
+    private bool startChangeInput = false;
 
     //临时存储
     private InputInfo currentInputInfo;
+    private Array keyCodeArr;
+    private InputInfo callbackInputInfo;
+    private bool changeInputSuccess = false;
     private InputManager()
     {
         Mono.Instance.onUpdate += InputUpdate;//添加帧刷新事件
@@ -79,8 +86,67 @@ public class InputManager : Singleton<InputManager>
     {
         this.openInput = openInput;
     }
+    /// <summary>
+    /// 开始等待自定义输入改键
+    /// </summary>
+    /// <param name="callback"></param>
+    public void StartChangeInput(UnityAction<InputInfo> callback)
+    {
+        Debug.Log("开始等待输入");
+        this.inputCallback = callback;//因为无法马上得到换键的输入 所以用回调来进行获取
+        Mono.Instance.StartCoroutine(StartChange());
+    }
+    /// <summary>
+    /// 协程 等待一帧后再进行输入检测
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator StartChange()
+    {
+        yield return null;
+        startChangeInput = true;
+    }
     private void InputUpdate()
     {
+        if (startChangeInput)
+        {
+            if (inputCallback!= null)
+            {
+                if (Input.anyKeyDown)
+                {
+                    //如果有按键按下的话这一帧才检测
+                    if (keyCodeArr == null)
+                    {
+                        keyCodeArr = Enum.GetValues(typeof(KeyCode));
+                    }
+                    foreach (KeyCode key in keyCodeArr)
+                    {
+                        if (Input.GetKeyDown(key))
+                        {
+                            callbackInputInfo = new InputInfo(InputInfo.InputType.Down, key);
+                            break;
+                        }
+                    }
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if (Input.GetMouseButtonDown(i))
+                        {
+                            callbackInputInfo = new InputInfo(InputInfo.InputType.Down, i);
+                            break;
+                        }
+                    }
+                    Debug.Log("检测到输入");
+                    inputCallback.Invoke(callbackInputInfo);
+                    inputCallback = null;
+                    startChangeInput = false;
+                    changeInputSuccess = true;
+                }
+            }
+        }
+        if (changeInputSuccess)
+        {
+            changeInputSuccess = false;
+            return;
+        }
         if (!openInput) return;
         foreach(E_EventType eventType in inputDic.Keys)
         {
