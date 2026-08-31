@@ -102,6 +102,7 @@ m_ResolvedPackages:
     - 1.0.75
     - 1.0.76
     - 1.0.77
+    - 1.0.78
     compatible:
     - 1.0.6
     - 1.0.7
@@ -162,6 +163,7 @@ m_ResolvedPackages:
     - 1.0.75
     - 1.0.76
     - 1.0.77
+    - 1.0.78
     recommended: 
     deprecated: []
   dependencies:

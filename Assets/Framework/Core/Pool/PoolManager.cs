@@ -95,12 +95,26 @@ public class PoolData
         usedList.Add(obj);
     }
 }
+public abstract class ClassPoolBase
+{ }
+public class ClassPool<T>: ClassPoolBase where T:class
+{
+    public Queue<T> objQueue = new Queue<T>();
+}
+/// <summary>
+/// 使用对象池的数据结构类或者逻辑类需要继承的接口 并且需要实现重置其中数据的方法
+/// </summary>
+public interface IPoolClass
+{
+    public void Reset();
+}
 /// <summary>
 /// 对象池管理器
 /// </summary>
 public class PoolManager : Singleton<PoolManager>
 {
     private Dictionary<string, PoolData> poolDic = new Dictionary<string, PoolData>();
+    private Dictionary<string, ClassPoolBase> classPoolDic = new Dictionary<string, ClassPoolBase>();
     //Pool对象的resource的路径
     private string path = "Pool/";
     //存放对象的对象池父节点
@@ -140,15 +154,54 @@ public class PoolManager : Singleton<PoolManager>
             return poolDic[name].pop();
         }
     }
+    /// <summary>
+    /// 取出数据结构类对象或者逻辑对象的方法
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="namespaceName"></param>
+    /// <returns></returns>
+    public T getObject<T>(string namespaceName = "") where T:class,new()
+    {
+        string poolName = namespaceName == "" ? typeof(T).Name : namespaceName + "_" + typeof(T).Name;
+        if (classPoolDic.ContainsKey(poolName))
+        {
+            ClassPool<T> pool = classPoolDic[poolName] as ClassPool<T>;
+            if (pool.objQueue.Count > 0)
+            {
+                Debug.Log("从池子中获取");
+                return pool.objQueue.Dequeue();
+            }
+        }
+        Debug.Log("新建一个对象");
+        return new T();
+    }
 
     public void putObject(string name,GameObject obj)
     {
         poolDic[name].push(obj);
     }
-
+    public void putObject<T>(T obj, string namespaceName = "") where T:class, IPoolClass
+    {
+        string poolName = namespaceName == "" ? typeof(T).Name : namespaceName + "_" + typeof(T).Name;
+        ClassPool<T> pool;
+        if (classPoolDic.ContainsKey(poolName))
+        {
+            pool = classPoolDic[poolName] as ClassPool<T>;
+        }
+        else
+        {
+            Debug.Log("新建一个池子");
+            pool = new ClassPool<T>();
+            classPoolDic.Add(poolName, pool);
+        }
+        Debug.Log("回收对象");
+        obj.Reset();//清除对象的状态
+        pool.objQueue.Enqueue(obj);
+    }
     public void clear()
     {
         poolDic.Clear();
         root = null;
+        classPoolDic.Clear();
     }
 }

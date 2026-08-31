@@ -100,12 +100,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Game\Grid\GridManager.cs" />
+    <Compile Include="Assets\Framework\Core\Timer\TimerTest.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ResourcesManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Framework\Core\Monster.cs" />
     <Compile Include="Assets\Framework\Core\Resource\EditorResManager.cs" />
+    <Compile Include="Assets\Framework\Core\Timer\TimerItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Framework\Core\Timer\TimerManager.cs" />
     <Compile Include="Assets\Framework\Core\Player.cs" />
     <Compile Include="Assets\Framework\Core\Music\MusicMain.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -116,6 +119,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Framework\Core\Resource\Test.cs" />
     <Compile Include="Assets\Framework\Core\Event\EventManager.cs" />
+    <Compile Include="Assets\Framework\Core\Pool\PoolTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Framework\Core\Resource\ABResManager.cs" />
     <Compile Include="Assets\Framework\Core\Singleton\MonoSingleton.cs" />
