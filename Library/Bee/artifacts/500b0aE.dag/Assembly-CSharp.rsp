@@ -382,6 +382,7 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityTcp.Editor.ref.dll"
 -analyzer:"E:/Program Files/tuanjie editor/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"E:/Program Files/tuanjie editor/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/CustomRP/Runtime/CustomRenderPiplineAsset.cs"
 "Assets/Framework/Core/Event/EventManager.cs"
 "Assets/Framework/Core/Event/E_EventType.cs"
 "Assets/Framework/Core/Input/InputManager.cs"

@@ -110,6 +110,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Framework\Core\Timer\TimerManager.cs" />
     <Compile Include="Assets\Framework\Core\Player.cs" />
+    <Compile Include="Assets\CustomRP\Runtime\CustomRenderPiplineAsset.cs" />
     <Compile Include="Assets\Framework\Core\Music\MusicMain.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
