@@ -16,7 +16,7 @@ partial class CameraRenderer
     const string bufferName = "Render Camera";
     CommandBuffer buffer = new CommandBuffer
     {
-        name = bufferName
+        //name = bufferName
     };
     /// <summary>
     /// 视锥体剔除的结果
@@ -26,22 +26,12 @@ partial class CameraRenderer
     /// 无光照着色器
     /// </summary>
     static ShaderTagId unlitShaderTagId = new ShaderTagId("SRPDefaultUnlit");
-    /// <summary>
-    /// 其他的着色器
-    /// </summary>
-    static ShaderTagId[] legacyShaderTagIds = {
-        new ShaderTagId("Always"),
-        new ShaderTagId("ForwardBase"),
-        new ShaderTagId("PrepassBase"),
-        new ShaderTagId("Vertex"),
-        new ShaderTagId("VertexLMRGBM"),
-        new ShaderTagId("VertexLM")
-    };
-    static Material errorMaterial;
     public void Render(ScriptableRenderContext context, Camera camera)
     {
         this.context = context;
         this.camera = camera;
+        PrepareBuffer();
+        PrepareForSceneWindow();//绘制UI元素
         //摄像机没有正确的视锥体裁剪的数据，直接返回，说明摄像机有问题
         if (!Cull())
         {
@@ -50,6 +40,7 @@ partial class CameraRenderer
         Setup();
         DrawVisibleGeometry();
         DrawUnsupportedShaders();//绘制使用其他shader的几何体
+        DrawGizmos();
         Submit();
     }
     /// <summary>
@@ -73,35 +64,13 @@ partial class CameraRenderer
         filteringSetting.renderQueueRange = RenderQueueRange.transparent;
         context.DrawRenderers(cullingResults, ref drawingSetting, ref filteringSetting);
     }
-    /// <summary>
-    /// 绘制使用legacyShaderTagIds的几何体
-    /// </summary>
-    void DrawUnsupportedShaders()
-    {
-        if (errorMaterial == null)
-        {
-            errorMaterial = new Material(Shader.Find("Hidden/InternalErrorShader"));
-        }
-        var drawingSetting = new DrawingSettings(legacyShaderTagIds[0], new SortingSettings(camera))
-        {
-            overrideMaterial = errorMaterial//将材质替换成错误材质
-        };
-        var filteringSetting = FilteringSettings.defaultValue;
-
-        //应用所有的legacyShaderTagIds中的shader
-        for (int i = 1; i < legacyShaderTagIds.Length; i++)
-        {
-            drawingSetting.SetShaderPassName(i, legacyShaderTagIds[i]);
-        }
-        context.DrawRenderers(cullingResults, ref drawingSetting, ref filteringSetting);
-    }
     void Setup()
     {
         //先clear再set：clear的时候还没有建立上下文，不知道渲染目标，用Hidden/InternalClear内部着色器将颜色写入渲染目标，需要执行完整的像素着色器运行
         //先set再clear：set之后已经知道了渲染目标，直接由ROP光栅化输出单元，直接向渲染目标中写入目标颜色
         context.SetupCameraProperties(camera);//将摄像机组件的所有属性，同步到底层原生渲染API
         buffer.ClearRenderTarget(true, true, Color.clear);//清除渲染目标缓存
-        buffer.BeginSample(bufferName);//开始性能采样
+        buffer.BeginSample(bufferName);//开始性能采样 bufferName参数是针对Profiler的 而FrameDebugger层级树显示的是CommandBuffer的name 也就是buffer.name
         ExecuteBuffer();
     }
     void Submit()
