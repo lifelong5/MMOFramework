@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\File\\Unity\\MMOFramework\\MMOFramework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB41DD1B-1BC2-1412-9DF8-7BA9F3458A0D}|Assembly-CSharp.csproj|d:\\file\\unity\\mmoframework\\mmoframework\\assets\\customrp\\runtime\\customrenderpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB41DD1B-1BC2-1412-9DF8-7BA9F3458A0D}|Assembly-CSharp.csproj|solutionrelative:assets\\customrp\\runtime\\customrenderpipeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB41DD1B-1BC2-1412-9DF8-7BA9F3458A0D}|Assembly-CSharp.csproj|D:\\File\\Unity\\MMOFramework\\MMOFramework\\assets\\customrp\\runtime\\customrenderpiplineasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB41DD1B-1BC2-1412-9DF8-7BA9F3458A0D}|Assembly-CSharp.csproj|solutionrelative:assets\\customrp\\runtime\\customrenderpiplineasset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomRenderPipeline.cs",
+              "DocumentMoniker": "D:\\File\\Unity\\MMOFramework\\MMOFramework\\Assets\\CustomRP\\Runtime\\CustomRenderPipeline.cs",
+              "RelativeDocumentMoniker": "Assets\\CustomRP\\Runtime\\CustomRenderPipeline.cs",
+              "ToolTip": "D:\\File\\Unity\\MMOFramework\\MMOFramework\\Assets\\CustomRP\\Runtime\\CustomRenderPipeline.cs",
+              "RelativeToolTip": "Assets\\CustomRP\\Runtime\\CustomRenderPipeline.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T07:37:06.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomRenderPiplineAsset.cs",
+              "DocumentMoniker": "D:\\File\\Unity\\MMOFramework\\MMOFramework\\Assets\\CustomRP\\Runtime\\CustomRenderPiplineAsset.cs",
+              "RelativeDocumentMoniker": "Assets\\CustomRP\\Runtime\\CustomRenderPiplineAsset.cs",
+              "ToolTip": "D:\\File\\Unity\\MMOFramework\\MMOFramework\\Assets\\CustomRP\\Runtime\\CustomRenderPiplineAsset.cs",
+              "RelativeToolTip": "Assets\\CustomRP\\Runtime\\CustomRenderPiplineAsset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T07:20:49.761Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

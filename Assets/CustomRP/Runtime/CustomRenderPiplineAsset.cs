@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+[CreateAssetMenu(menuName ="Rendering/Custom Render Pipeline")]
 public class CustomRenderPiplineAsset : RenderPipelineAsset
 {
     protected override RenderPipeline CreatePipeline()
     {
-        return null;
+        return new CustomRenderPipeline();
     }
 }
